@@ -5,7 +5,7 @@ from std_msgs.msg import Bool
 import pigpio
 SENSOR_PIN = 18
 
-class Sensor Publisher (Node): 
+class SensorPublisher(Node): 
 	def __init__(self):
 		super() .__init__('sensor_publisher') 
 		self.init_sensor() 
