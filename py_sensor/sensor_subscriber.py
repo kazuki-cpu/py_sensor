@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
 
-class Sensor Subscriber (Node):
+class SensorSubscriber(Node):
 	def __init__(self):
 		super(). __init__('sensor_subscriber') 
                 self.subscription = self.create_subscription(
