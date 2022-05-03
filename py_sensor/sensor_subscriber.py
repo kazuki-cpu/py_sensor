@@ -4,7 +4,7 @@ from std_msgs.msg import Bool
 
 class SensorSubscriber(Node):
 	def __init__(self):
-		super(). __init__('sensor_subscriber') 
+		super().__init__('sensor_subscriber') 
                 self.subscription = self.create_subscription(
 			Bool, 
 			'sensor_topic', 
@@ -18,8 +18,11 @@ class SensorSubscriber(Node):
 def main(args=None): 
 	try:
 		rclpy.init(args=args)
-		sensor_subscriber = Sensor Subscriber()
+		
+		sensor_subscriber = SensorSubscriber()
+		
 		rclpy.spin(sensor_subscriber)
+		
 	except KeyboardInterrupt:
 		pass 
 	finally:
